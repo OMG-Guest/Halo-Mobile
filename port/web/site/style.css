@@ -724,7 +724,7 @@ html, body { background: var(--bg); }
 
 .backdrop {
   position: fixed;
-  inset: -12px;
+  inset: 0;
   z-index: -1;
   filter: brightness(0.6);
   background: url("art/ring.jpg") 62% center / cover no-repeat, var(--bg);
@@ -733,7 +733,6 @@ body.has-backdrop .backdrop {
   background-size: cover;
   background-position: center;
   filter: blur(3px) brightness(0.45) saturate(1.15);
-  transform: scale(1.03);
 }
 body.playing .backdrop { display: none; }
 
